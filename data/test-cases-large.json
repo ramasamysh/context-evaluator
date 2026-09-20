@@ -1,0 +1,262 @@
+[
+    {
+      "id": "owner-by-id",
+      "question": "Where is the endpoint for retrieving an owner by ID?",
+      "candidates": [
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/OwnerRestControllerV1.java",
+          "expectedEvidence": "DIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/service/ClinicServiceImpl.java",
+          "expectedEvidence": "INDIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/VetRestControllerV1.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/main/resources/db/h2/schema.sql",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java",
+          "expectedEvidence": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "create-owner",
+      "question": "How is a new owner created?",
+      "candidates": [
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/OwnerRestControllerV1.java",
+          "expectedEvidence": "DIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/service/ClinicServiceImpl.java",
+          "expectedEvidence": "INDIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/PetRestControllerV1.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/main/resources/application.properties",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/rest/controller/VisitRestControllerV1Tests.java",
+          "expectedEvidence": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "owners-by-last-name",
+      "question": "How are owners searched by last name?",
+      "candidates": [
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/OwnerRestControllerV1.java",
+          "expectedEvidence": "DIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/repository/OwnerRepository.java",
+          "expectedEvidence": "INDIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/SpecialtyRestControllerV1.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/main/resources/db/postgres/data.sql",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/rest/controller/UserRestControllerV1Tests.java",
+          "expectedEvidence": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "pet-owner-association",
+      "question": "Where is a pet associated with its owner?",
+      "candidates": [
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/OwnerRestControllerV1.java",
+          "expectedEvidence": "DIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/model/Pet.java",
+          "expectedEvidence": "INDIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/VetRestControllerV1.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/main/resources/db/h2/data.sql",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/service/userService/UserServiceJpaTests.java",
+          "expectedEvidence": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "visit-for-pet",
+      "question": "How is a visit created for a pet?",
+      "candidates": [
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/OwnerRestControllerV1.java",
+          "expectedEvidence": "DIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/VisitRestControllerV1.java",
+          "expectedEvidence": "INDIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/PetTypeRestControllerV1.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/main/resources/db/mysql/schema.sql",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/rest/controller/SpecialtyRestControllerV1Tests.java",
+          "expectedEvidence": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "delete-endpoints",
+      "question": "Which endpoints can delete data?",
+      "candidates": [
+        {
+          "path": "src/main/resources/openapi.yml",
+          "expectedEvidence": "DIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/PetRestControllerV1.java",
+          "expectedEvidence": "INDIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/RootRestControllerV1.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/advice/ExceptionControllerAdvice.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/service/clinicService/ClinicServiceH2JdbcTests.java",
+          "expectedEvidence": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "input-validation",
+      "question": "Where is input validation performed?",
+      "candidates": [
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/validation/PetAgeValidator.java",
+          "expectedEvidence": "DIRECT"
+        },
+        {
+          "path": "src/main/resources/openapi.yml",
+          "expectedEvidence": "INDIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/VetRestControllerV1.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/main/resources/application-h2.properties",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcVisitRepositoryImpl.java",
+          "expectedEvidence": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "database-configuration",
+      "question": "How is the database configured?",
+      "candidates": [
+        {
+          "path": "src/main/resources/application.properties",
+          "expectedEvidence": "DIRECT"
+        },
+        {
+          "path": "src/main/resources/application-h2.properties",
+          "expectedEvidence": "INDIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/OwnerRestControllerV1.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/advice/ExceptionControllerAdvice.java",
+          "expectedEvidence": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "api-exception-handling",
+      "question": "Where are API exceptions handled?",
+      "candidates": [
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/advice/ExceptionControllerAdvice.java",
+          "expectedEvidence": "DIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/OwnerRestControllerV1.java",
+          "expectedEvidence": "INDIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/validation/PetAgeValidator.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/main/resources/db/h2/schema.sql",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/service/userService/UserServiceH2JdbcTests.java",
+          "expectedEvidence": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "owner-endpoint-tests",
+      "question": "Which tests verify owner-related endpoints?",
+      "candidates": [
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/rest/controller/OwnerRestControllerV1Tests.java",
+          "expectedEvidence": "DIRECT"
+        },
+        {
+          "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/OwnerRestControllerV1.java",
+          "expectedEvidence": "INDIRECT"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/rest/controller/VetRestControllerV1Tests.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/service/clinicService/ClinicServiceJpaTests.java",
+          "expectedEvidence": "NONE"
+        },
+        {
+          "path": "src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java",
+          "expectedEvidence": "NONE"
+        }
+      ]
+    }
+]

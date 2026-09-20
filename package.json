@@ -1,0 +1,24 @@
+{
+  "name": "petclinic-jev-context-evaluator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Evaluate Spring PetClinic REST code-context selection with TypeSafe Jev.",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/run-experiment.js",
+    "validate": "npm run build && node dist/run-experiment.js --validate-only",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0",
+    "dotenv": "^18.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

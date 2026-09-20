@@ -1,0 +1,80 @@
+[
+  {
+    "id": "owner-by-id-endpoint",
+    "question": "Where is the REST endpoint for retrieving an owner by ID implemented?",
+    "candidates": [
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/OwnerRestControllerV1.java",
+        "expectedEvidence": "DIRECT"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/service/ClinicService.java",
+        "expectedEvidence": "INDIRECT"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/mapper/OwnerMapper.java",
+        "expectedEvidence": "INDIRECT"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/VetRestControllerV1.java",
+        "expectedEvidence": "NONE"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/rest/validation/PetAgeValidator.java",
+        "expectedEvidence": "NONE"
+      }
+    ]
+  },
+  {
+    "id": "create-visit",
+    "question": "Where and how is a new visit created for a pet through the REST API?",
+    "candidates": [
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/VisitRestControllerV1.java",
+        "expectedEvidence": "DIRECT"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/service/ClinicServiceImpl.java",
+        "expectedEvidence": "INDIRECT"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/mapper/VisitMapper.java",
+        "expectedEvidence": "INDIRECT"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/UserRestControllerV1.java",
+        "expectedEvidence": "NONE"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/config/SwaggerConfig.java",
+        "expectedEvidence": "NONE"
+      }
+    ]
+  },
+  {
+    "id": "pet-age-validation",
+    "question": "Where is the rule that validates a pet's age implemented?",
+    "candidates": [
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/rest/validation/PetAgeValidator.java",
+        "expectedEvidence": "DIRECT"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/rest/validation/PetAgeValidation.java",
+        "expectedEvidence": "INDIRECT"
+      },
+      {
+        "path": "src/test/java/org/springframework/validation/PetAgeValidatorTest.java",
+        "expectedEvidence": "INDIRECT"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/rest/controller/v1/PetRestControllerV1.java",
+        "expectedEvidence": "INDIRECT"
+      },
+      {
+        "path": "src/main/java/org/springframework/samples/petclinic/mapper/OwnerMapper.java",
+        "expectedEvidence": "NONE"
+      }
+    ]
+  }
+]
